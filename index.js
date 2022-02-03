@@ -3,6 +3,7 @@ const { App } = require('@slack/bolt');
 config();
 
 const { registerCommands } = require('./src/commands');
+const { registerEvents } = require('./src/events');
 
 const app = new App({
     token: process.env.SLACK_API_TOKEN,
@@ -13,6 +14,7 @@ const app = new App({
 });
 
 registerCommands(app);
+registerEvents(app);
 
 (async () => {
     await app.start();
