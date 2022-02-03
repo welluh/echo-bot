@@ -4,7 +4,11 @@ module.exports = function (app) {
        ack,
        respond }
     ) => {
-        await ack();
-        await respond(`Command initiated ${command.text}`);
+        try {
+            await ack();
+            await respond(`Command initiated ${command.text}`);
+        } catch (error) {
+            console.error(error);
+        }
     });
 }
