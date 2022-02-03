@@ -1,12 +1,21 @@
 {
   "name": "echo-slack-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Echo is a Slack bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Lol. Nope!\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.9.0"
+  }
 }
