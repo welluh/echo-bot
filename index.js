@@ -20,5 +20,5 @@ registerMessages(app);
 
 (async () => {
     await app.start();
-    console.log('⚡️ Bolt app is running!');
+    console.info('⚡️ Bolt app is running!');
 })();

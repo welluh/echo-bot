@@ -7,7 +7,7 @@ module.exports = function (app) {
                         type: 'section',
                         text: {
                             type: 'mrkdwn',
-                            text: `Thanks for the mention <@${event.user}>!`
+                            text: `Thanks for the mention <@${event.user}>!`,
                         },
                     },
                 ],
@@ -16,4 +16,4 @@ module.exports = function (app) {
             console.error(error);
         }
     });
-}
+};

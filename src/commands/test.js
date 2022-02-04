@@ -1,8 +1,8 @@
 module.exports = function (app) {
     app.command('/command', async ({
-       command,
-       ack,
-       respond }
+        command,
+        ack,
+        respond },
     ) => {
         try {
             await ack();
@@ -11,4 +11,4 @@ module.exports = function (app) {
             console.error(error);
         }
     });
-}
+};
